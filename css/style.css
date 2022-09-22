@@ -72,3 +72,15 @@ main {display: grid;justify-content: center;}
 .green{border-color: var(--color2);}
 .orange{border-color: var(--color3);}
 .blue{border-color: var(--color4);}
+
+
+@media (max-width:600px) {
+    .text {
+        width: unset;
+    }
+    
+    #boxes {
+        grid-template-columns: unset;
+        row-gap: 30px;
+    }
+}
