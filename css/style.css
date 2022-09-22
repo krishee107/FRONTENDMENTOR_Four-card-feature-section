@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root{
+    --color1:hsl(0, 78%, 62%);
+    --color2:hsl(180, 62%, 55%);
+    --color3:hsl(34, 97%, 64%);
+    --color4:hsl(212, 86%, 64%);
+    --color5:hsl(234, 12%, 34%);
+    --color6:hsl(229, 6%, 66%);
+    --color7:hsl(0, 0%, 98%);
+}
+
+html, body{
+    margin: 0;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color7);
+}
+
+/* Main */
+main {display: grid;justify-content: center;}
+
+/*Content*/
+.info {text-align: center;padding: 10px; color: var(--color5);}
+.info span{font-weight: normal;}
+
+.text {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    color: var(--color6);
+}
+
+/* Boxes */
+#boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    padding: 20px 0;
+}
+.doubleColumn {
+    display: grid;
+    grid-gap: 30px;
+}
+
+.box {
+    background: white;
+    border-radius: 10px;
+    border-top: 4px solid;
+    padding: 5%;
+    display: grid;
+    gap: 10px;
+    max-width: 300px;
+    height: 200px;
+    -webkit-box-shadow: 10px 10px 10px -1px rgba(0,0,0,0.14);
+    -moz-box-shadow: 10px 10px 10px -1px rgba(0,0,0,0.14);
+    box-shadow: 10px 10px 10px -1px rgba(0,0,0,0.14);
+    align-items: center;
+}
+
+.boxTitle {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--color5);
+}
+.boxText{color:var(--color6)}
+.boxIco {justify-self: right;}
+
+.red{border-color: var(--color1);}
+.green{border-color: var(--color2);}
+.orange{border-color: var(--color3);}
+.blue{border-color: var(--color4);}
