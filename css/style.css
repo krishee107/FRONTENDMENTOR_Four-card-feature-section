@@ -18,10 +18,10 @@ html, body{
 }
 
 /* Main */
-main {display: grid;justify-content: center;}
+main {display: grid;justify-content: center;height: 100vh;}
 
 /*Content*/
-.info {text-align: center;padding: 10px; color: var(--color5);}
+.info {text-align: center;color: var(--color5);align-self: center;}
 .info span{font-weight: normal;}
 
 .text {
@@ -38,7 +38,6 @@ main {display: grid;justify-content: center;}
     justify-content: center;
     align-items: center;
     column-gap: 30px;
-    padding: 20px 0;
 }
 .doubleColumn {
     display: grid;
